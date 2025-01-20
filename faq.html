@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8fbff;
+        color: slategrey;
+        font-family: Arial, sans-serif;
+      }
+      .faq-header {
+        background-color: #2124b1;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .accordion-button {
+        font-weight: bold;
+        color: #2124b1;
+      }
+      .accordion-button:not(.collapsed) {
+        color: white;
+        background-color: #2124b1;
+      }
+      .accordion-button:focus {
+        outline: none;
+        box-shadow: none; /* Optional, to remove any shadow effects */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="faq-header">
+      <h1>Frequently Asked Questions</h1>
+    </header>
+    <main class="container my-5">
+      <div class="accordion" id="faqAccordion">
+        <!-- Existing Questions -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is Pythematics?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Pythematics is a collection of Python-based mathematical tools
+              designed to help users solve complex mathematical problems
+              interactively. It includes optimization solvers, statistical
+              analysis tools, encryption algorithms, and more.
+            </div>
+          </div>
+        </div>
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How do I get started with Pythematics?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              To get started, simply visit the project's homepage and explore
+              the available tools. You can interact with the applications
+              directly in your browser. No installation is needed for most
+              tools, but some may require a Python environment setup.
+            </div>
+          </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Is Pythematics free to use?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Yes, Pythematics is completely free and open-source. You can
+              explore all of its tools and functionalities at no cost. We
+              believe in making powerful mathematical tools accessible to
+              everyone.
+            </div>
+          </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Can I contribute to Pythematics?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Absolutely! Pythematics is open-source, and contributions are
+              welcome. You can contribute by suggesting new features, fixing
+              bugs, or improving the documentation. Please visit the project's
+              GitHub repository to get started.
+            </div>
+          </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Is Pythematics available in other languages?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Currently, Pythematics is available in English, but we plan to
+              include multiple languages in future updates to make the tools
+              accessible to a global audience.
+            </div>
+          </div>
+        </div>
+        <!-- Additional Questions -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven"
+              aria-expanded="false"
+              aria-controls="collapseEleven"
+            >
+              How can I reset my Pythematics password?
+            </button>
+          </h2>
+          <div
+            id="collapseEleven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEleven"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Password resets can be initiated from the login page. Simply click
+              "Forgot Password?" and follow the prompts to receive a reset link
+              via email.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwelve">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwelve"
+              aria-expanded="false"
+              aria-controls="collapseTwelve"
+            >
+              Does Pythematics support mobile devices?
+            </button>
+          </h2>
+          <div
+            id="collapseTwelve"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwelve"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Yes, Pythematics is mobile-friendly and can be accessed on
+              smartphones and tablets. However, for an optimal experience, a
+              desktop or laptop is recommended.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThirteen"
+              aria-expanded="false"
+              aria-controls="collapseThirteen"
+            >
+              Can I integrate Pythematics with other tools?
+            </button>
+          </h2>
+          <div
+            id="collapseThirteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThirteen"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Pythematics provides APIs for integration with other platforms.
+              Please refer to the API documentation for more details on how to
+              connect and use these features.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFourteen"
+              aria-expanded="false"
+              aria-controls="collapseFourteen"
+            >
+              Are there any tutorials available for beginners?
+            </button>
+          </h2>
+          <div
+            id="collapseFourteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFourteen"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Yes, we offer a variety of tutorials and guides for beginners.
+              Visit our Tutorials section to find step-by-step instructions on
+              using Pythematics effectively.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center my-4">
+        <p>
+            If you have any other questions, please contact 
+            <a href="mailto:pythematicssupport@gmail.com" style="color: #2124b1; font-weight: bold;">
+                pythematicssupport@gmail.com
+            </a>.
+        </p>
+    </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
