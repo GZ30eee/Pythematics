@@ -1,103 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pythematics Help</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Help Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background-color: #f8fbff;
-            font-family: 'Arial', sans-serif;
-            color: #212529;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
         .container {
             max-width: 900px;
-            margin: 50px auto;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            padding: 0;
-        }
-        .header {
-            background-color: #2124b1;
-            color: #fff;
+            margin: 0 auto;
             padding: 20px;
-            text-align: center;
         }
-        .content {
+
+        header {
+            text-align: center;
             padding: 30px;
-        }
-        .content h6 {
-            color: #2124b1;
-            font-weight: bold;
-        }
-        .content p, .content ul {
-            margin-bottom: 20px;
-        }
-        .content ul li {
-            color: #2124b1;
-            font-size: 1rem;
-            margin-left: 20px;
-        }
-        .footer {
-            background-color: #f8f9fa;
-            text-align: center;
-            padding: 10px;
-            border-top: 1px solid #dee2e6;
-        }
-        .footer button {
             background-color: #2124b1;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
+            color: white;
         }
-        .footer button:hover {
-            background-color: #131593;
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0;
+        }
+
+        .help-options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .option:hover {
+            transform: translateY(-5px);
+        }
+
+        .option i {
+            font-size: 30px;
+            color: #2124b1;
+        }
+
+        .option div {
+            flex: 1;
+        }
+
+        .option div h3 {
+            margin: 0 0 5px;
+            font-size: 18px;
+            color: #2124b1;
+        }
+
+        .option div p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #2124b1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>Help & Support</h1>
+        <p>Need assistance? We're here to help!</p>
+    </header>
 
-<div class="container">
-    <!-- Header -->
-    <div class="header">
-        <h1>About Pythematics</h1>
+    <div class="container">
+        <section class="help-options">
+            <div class="option">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h3>GitHub</h3>
+                    <p>Check out our <a href="https://github.com/GZ30eee/Pythematics" target="_blank">GitHub repository</a> for more details and issue tracking.</p>
+                </div>
+            </div>
+
+            <div class="option">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>Contact us at <a href="mailto:thepythematicsteam@gmail.com">thepythematicsteam@gmail.com</a>. We'll respond as soon as possible.</p>
+                </div>
+            </div>
+
+            <div class="option">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with the developer on <a href="https://www.linkedin.com/in/ghanshyamsinh-zala-1a1b9924b/" target="_blank">LinkedIn</a> for professional support.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Your help request will be addressed promptly. Thank you for reaching out!</p>
+        </footer>
     </div>
-
-    <!-- Content -->
-    <div class="content">
-        <h6>Why Pythematics?</h6>
-        <p>Pythematics is a <strong>free</strong> and open-source collection of Python-based mathematical tools and simulations. It aims to empower users by providing innovative solutions to complex mathematical problems.</p>
-        
-        <h6>Project Purpose</h6>
-        <p>Pythematics was created to bridge the gap between mathematics and Python, making mathematical concepts more accessible through interactive visualizations and tools.</p>
-        
-        <h6>How Helpful Is It?</h6>
-        <p>This project offers a range of mathematical solutions, including <strong>optimization solvers</strong>, <strong>statistical analysis tools</strong>, <strong>encryption algorithms</strong>, and fractal generation apps, making it a versatile resource for students, researchers, and enthusiasts.</p>
-
-        <h6>Features Include:</h6>
-        <ul>
-            <li><strong>Interactive mathematical tools</strong> for various disciplines.</li>
-            <li><strong>Easy-to-use interfaces</strong> with customizable options.</li>
-            <li><strong>Open-source</strong> and free to use for everyone.</li>
-        </ul>
-        
-        <h6>Get Started Now</h6>
-        <p>Explore the tools and applications like <strong>StatScope</strong>, <strong>MathSolverPro</strong>, <strong>PathFinder Studio</strong>, and more! Dive into Python-powered mathematics today!</p>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <button onclick="window.history.back();">Go Back</button>
-    </div>
-</div>
-
 </body>
+
 </html>
