@@ -38,6 +38,35 @@
         height: auto; /* Maintains the aspect ratio */
         border-radius: 15px; /* Adjust the border radius if needed */
     }
+
+    .pulse-effect {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Add padding for button size */
+    color: #fff; /* Text color */
+    background-color: #4245bd; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    overflow: hidden; /* Hide overflow from pseudo-element */
+    animation: pulse 2s infinite; /* Add pulse animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Scale up slightly */
+    }
+    100% {
+        transform: scale(1); /* Scale back to original size */
+    }
+}
+
+.rate{
+    background-color: #4245bd;
+}
+
 </style>
 
 </style>
@@ -80,7 +109,7 @@
                         </div>
                     </div>
                     <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScwueakasscAbyfno2ks7h9mKn8er6M5TY7j7ONCIeR3lR3Qw/viewform?usp=dialog" target="_blank" class="btn btn-secondary text-light rounded-pill py-2 px-4">Rate the App!</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScwueakasscAbyfno2ks7h9mKn8er6M5TY7j7ONCIeR3lR3Qw/viewform?usp=dialog" target="_blank" class="btn btn-secondary text-light rounded-pill py-2 px-4 rate">Rate the App!</a>
                 </div>
             </nav>
 
@@ -407,10 +436,9 @@
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-transparent border rounded text-white p-4">
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Yes, this space is for rating the app. Will be updated when reviews are done. So be sure to rate it.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
+                            <div class="ps-0"> <!-- Changed from ps-3 to ps-0 -->
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
                             </div>
@@ -418,10 +446,20 @@
                     </div>
                     <div class="testimonial-item bg-transparent border rounded text-white p-4">
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Review or Testimonal will be displayed in this format. Be sure to drop a honest one!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
+                            <div class="ps-0"> <!-- Changed from ps-3 to ps-0 -->
+                                <h6 class="text-white mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p>Although this is a new thing in my app - testimonials, but its good to have honest reviews. Rate it ASAP.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ps-0"> <!-- Changed from ps-3 to ps-0 -->
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
                             </div>
@@ -429,21 +467,9 @@
                     </div>
                     <div class="testimonial-item bg-transparent border rounded text-white p-4">
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Press that 'Share your experience' button to be part of the testimonal team.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
+                            <div class="ps-0"> <!-- Changed from ps-3 to ps-0 -->
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
                             </div>
@@ -451,8 +477,10 @@
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <a class="drop-review-btn btn btn-light" href="https://docs.google.com/forms/d/e/1FAIpQLScwueakasscAbyfno2ks7h9mKn8er6M5TY7j7ONCIeR3lR3Qw/viewform?usp=dialog" target="_blank">Share your experience!</a>
+                    <a class="drop-review-btn btn btn-light pulse-effect" href="https://docs.google.com/forms/d/e/1FAIpQLScwueakasscAbyfno2ks7h9mKn8er6M5TY7j7ONCIeR3lR3Qw/viewform?usp=dialog" target="_blank">Share your experience!</a>
                 </div>
+                
+                
             </div>
         </div>
         <!-- Testimonial End -->
